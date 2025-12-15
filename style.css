@@ -201,3 +201,12 @@ footer {
     background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
   }
 }
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item.full {
+  aspect-ratio: 16 / 9;
+}
