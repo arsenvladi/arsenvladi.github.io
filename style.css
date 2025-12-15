@@ -136,11 +136,15 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
+}
+/* Full width item */
+.gallery-item.full {
+  grid-column: span 2;
 }
 
 .gallery-item {
