@@ -111,3 +111,24 @@ footer {
   height: auto;
   display: block;
 }
+.project:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #ddd;
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .projects {
+    padding: 2.5rem 1rem;
+  }
+
+  .project {
+    margin-bottom: 4rem;
+  }
+
+  .project h3 {
+    font-size: 1.25rem;
+  }
+}
